@@ -1,0 +1,30 @@
+@charset "UTF- 8";
+
+
+
+#res{
+
+    margin-top: 20px;
+
+}
+
+body{
+   margin: 10px;
+   padding: 15px;
+   box-shadow: black 5px 5px 5px;
+    border: black solid 1px;
+    text-align: center;
+}
+
+#res{
+
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    border: rgba(0, 0, 0, 0.548) solid 1px;
+    background-color: lightblue;
+    font-weight: bolder;
+    border-radius: 15px;
+
+
+}

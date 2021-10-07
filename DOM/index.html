@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Iniciando aulas com DOM</h1>
+    <p>Aqui vai o resultado</p>
+
+    <p> Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+
+
+    <div id="ola">Ola mundo</div>
+
+    <div class="oi">tudo bem</div>    
+
+    <div id="msg">Clique Aqui</div>
+
+        <script>
+            var p1 = window.document.getElementsByTagName('p')[0]
+            window.document.write(p1.innerText)
+
+
+            var corpo = window.document.body
+            corpo.style.backgroundColor = 'lightblue'
+
+
+            var p2 = window.document.getElementsByTagName('p')[1]
+            window.document.write(p2.innerHTML)
+
+            window.document.write(p2.innerText)
+            p2.style.color = 'red'
+
+
+
+            var id01 = window.document.getElementById('msg')
+
+            id01.style.backgroundColor = 'green'
+
+
+            var id02 = document.querySelector('div#ola')/* # para quando dor id */
+
+            var id03 = document.querySelector('div.oi')/* . para quando for class */
+
+
+            id02.style.backgroundColor = 'yellow'
+
+            id03.style.backgroundColor ='blue'
+        </script>
+    
+</body>
+</html>
