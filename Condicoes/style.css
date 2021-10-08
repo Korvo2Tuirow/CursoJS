@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+
+    border: 1px black solid;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+p{
+    margin: 10px;
+}
+
+strong{
+
+    
+    color: red;
+    font-size: 20px;
+}
