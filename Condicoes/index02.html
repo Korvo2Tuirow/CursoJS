@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
+    <title>Nacionalidade</title>
+
+</head>
+
+<body>
+
+    <h1>Em que país você nasceu ?</h1>
+
+    <p>Digite o país onde nasceu : <input type="text" id="pais"></p>
+
+    <input type="button" value="Clique aqui " onclick="mostrar()">
+
+    <div id="resposta"></div>
+
+
+    <script>
+
+
+
+        function mostrar() {
+
+
+
+            var info = window.document.getElementById('pais')
+
+            var res = window.document.getElementById('resposta')
+
+            var info = String(info.value)
+            if (info == 'Brasil') {
+
+                res.innerHTML = `Você é Brasileiro`
+            }
+            else {
+                res.innerHTML = `Você é gringo`
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
