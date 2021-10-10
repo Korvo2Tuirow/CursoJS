@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições parte 2</title>
+</head>
+<body>
+
+    <p>Digite sua idade &#128073 <input type="text" id="idade"><input type="button" value="clique" onclick="clique()"></p>
+    <div id="resposta"></div>
+    <script>
+
+        function clique() {
+
+            age=window.document.getElementById('idade')
+            age=Number(age.value)
+
+            res=window.document.getElementById('resposta')
+
+            if (age>=16 && age<18 || age>=65 ) {
+
+                res.innerHTML = `Com <strong>${age}</strong> anos de idade seu voto é opcional.`
+            }
+
+            else if (age<16) {
+
+                res.innerHTML = ` Com <strong>${age}</strong> anos de idade &#128286 você não pode votar.`
+
+            }
+
+            else if (age=>18){
+
+                res.innerHTML = `Com <strong>${age}</strong> anos de idade seu voto é obrigatório.`
+            }
+            
+
+                            
+
+               
+    
+
+
+        
+            }
+        
+        
+        
+        
+        
+           
+            
+
+            
+
+
+
+        
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
