@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+
+<body>
+    <!-- 1. Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante. -->
+
+    <p>Digite uma letra : <input type="text" id="char"> <input type="button" value="Verificar" onclick="ver()"></p>
+
+    <div id="resposta"></div>
+
+
+    <script>
+
+        function ver() {
+
+            var letra = window.document.getElementById('char')
+
+            var letra = String(letra.value).toLocaleUpperCase()
+
+            var res = window.document.getElementById('resposta')
+
+            if (letra == 'A' || letra == 'E' || letra == 'I' || letra == 'O' || letra == 'U') {
+
+                res.innerHTML = `A letra <strong>${letra}</strong> é uma vogal `
+
+            }
+
+            else {
+               
+                res.innerHTML = `A letra <strong>${letra}</strong> é uma consoante`
+
+            }
+
+        }
+
+    </script>
+
+
+        <!--Existem, de cara, duas maneiras de 'quebrar' esse script, ou seja, de hackear  ele.
+Você consegui descobrir?
+
+A resposta está aqui embaixo, escrita em branco, para ler basta selecionar.
+Porém, só veja depois de pensar bastante como burlar esse script, ok?
+
+1. Digitar um número
+2. Digitar mais de um caractere 
+
+FALTA APRENDER AINDA-->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
