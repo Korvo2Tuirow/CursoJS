@@ -11,7 +11,8 @@
 <body>
     <!-- 1. Faça um script que verifique se uma letra digitada num campo de input é vogal ou consoante. -->
 
-    <p>Digite uma letra : <input type="text" maxlength="1" id="char"> <input type="button" value="Verificar" onclick="ver()"></p> <!-- maxlength="1" permite digitar apenas 1 letra-->
+    <p>Digite uma letra : <input type="text" maxlength="1" id="char"> <input type="button" value="Verificar"
+            onclick="ver()"></p> <!-- maxlength="1" permite digitar apenas 1 letra-->
 
     <div id="resposta"></div>
 
@@ -32,8 +33,16 @@
 
             }
 
+            else if (letra == '0' || letra == '1' || letra == '2' || letra == '3' || letra == '4' || letra == '5' || letra == '6' || letra == '7' || letra == '8' || letra == '9'){
+
+                let erro = res
+
+                erro.innerHTML = `<strong>DIGITE UMA LETRA</strong>`
+
+            }
+
             else {
-               
+
                 res.innerHTML = `A letra <strong>${letra}</strong> é uma consoante`
 
             }
@@ -43,14 +52,14 @@
     </script>
 
 
-        <!--Existem, de cara, duas maneiras de 'quebrar' esse script, ou seja, de hackear  ele.
+    <!--Existem, de cara, duas maneiras de 'quebrar' esse script, ou seja, de hackear  ele.
 Você consegui descobrir?
 
 A resposta está aqui embaixo, escrita em branco, para ler basta selecionar.
 Porém, só veja depois de pensar bastante como burlar esse script, ok?
 
-1. Digitar um número
-2. Digitar mais de um caractere 
+1. Digitar um número ( ajustado com uma gambiarra)
+2. Digitar mais de um caractere (dirigido com maxlength="1" )
 
 FALTA APRENDER AINDA-->
 
