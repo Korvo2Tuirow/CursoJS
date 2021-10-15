@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 02 if e else</title>
+</head>
+
+<body>
+    <!--2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+
+    A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+    A mensagem "Reprovado", se a média for menor do que sete;
+    A mensagem "Aprovado com Distinção", se a média for igual a dez.-->
+
+    <h1>Média De Notas</h1>
+
+    <p>PRIMEIRA NOTA : <input type="number" name="nota" id="nota1"> </p>
+
+    <p>SEGUNDA NOTA: <input type="number" name="nota" id="nota2"></p>
+
+    <input type="button" value="Calcular Média" id="calc" onclick="calcular ()">
+
+    <p id="media"></p>
+
+
+
+    <script>
+
+        function calcular() {
+
+            n1 = parseFloat(document.getElementById('nota1').value)
+            n2 = parseFloat(document.getElementById('nota2').value)
+            res = document.getElementById('media')
+
+            med = ((n1 + n2) / 2)
+
+            if (med == 10) {
+
+                res.innerHTML = `Sua média de suas notas é ${med} e você está APROVADO COM DISTINÇÃO.`
+
+            } else if(med < 7) {
+
+                res.innerHTML = `Sua média de suas notas é ${med} e você está REPROVADO `
+                
+            }else{
+                res.innerHTML = `Sua média de suas notas é ${med} e você está APROVADO `
+                
+            }
+
+        }
+        
+    </script>
+</body>
+
+</html>
