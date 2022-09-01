@@ -1,4 +1,4 @@
-let num = [a,b,c,jkl,hg]
+var num =['a', 'b', 'c']
 
 console.log(`nosso vetor é o ${num}`)
 

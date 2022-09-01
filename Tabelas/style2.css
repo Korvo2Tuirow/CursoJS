@@ -1,0 +1,46 @@
+table{
+    
+    border: 2px solid black; 
+    border-collapse:collapse;
+    box-shadow: rgba(0, 0, 0, 0.699) 2px 2px 6px;
+
+    position: relative; /*para cabeçãlho fixo*/
+}
+
+td, th{
+    width: 200px;
+    padding: 10px;
+    border:1px solid black;
+    
+}
+thead >  th{
+    background-color: gray;
+    color: white;
+}
+td.num{
+    text-align: right;
+}
+
+
+/*Efeito ZEbrado*/
+tbody > th > tr:nth-child(2n){
+    background-color: rgb(197, 247, 244);
+}
+/*    ou
+:nth-child(odd)
+:nth-child(even) 
+=================================*/
+
+    /* Cabeçalho Fixo */
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+    }
+    /*=========================*/
+tfoot >tr > th{
+    background-color: rgb(122, 226, 131);
+}
+ th{
+        background-color: rgb(235, 231, 176);
+    }
