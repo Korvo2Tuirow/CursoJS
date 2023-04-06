@@ -3,29 +3,29 @@ let numbers;
 let input;
 let inputNumber;
 let soma = 0;
+let res = document.querySelector(".res");
 document.querySelector(".addNumber").addEventListener("click", add);
 
 function add() {
   input = document.querySelector("input");
-  let ver = typeof inputNumber;
- 
   inputNumber = parseInt(input.value);
 
-  if (inputNumber > 100 || inputNumber <= 0 ||ver != 'number') {
-    alert("INSIRA UM NUMERO VALIDO");
-  } else {
+  if (inputNumber >= 1 && inputNumber <= 100) {
     number.push(inputNumber);
-
     document.querySelector(
       ".boxValue"
     ).innerHTML += `Valor adicionado: ${inputNumber} </br>`;
-
     console.log(inputNumber);
     console.log(number);
+  } else {
+    alert("INSIRA UM NUMERO VALIDO");
   }
 }
 
-document.querySelector(".end").addEventListener("click", () => {
+document.querySelector(".end").addEventListener("click", resposta);
+
+function resposta() {
+ 
   numbers = number.length;
 
   for (let i = 0; i < number.length; i++) {
@@ -37,11 +37,13 @@ document.querySelector(".end").addEventListener("click", () => {
 
   let mediaValue = (soma / number.length).toFixed(2);
 
-  document.querySelector(
-    ".res"
-  ).innerHTML = `<p>Ao todo, temos ${numbers} números cadastrado</p>
+ 
+  res.innerHTML = `<p>Ao todo, temos ${numbers} números cadastrado</p>
     <p>O maior valor informado foi ${maxValue}</p>
     <p>O menor valor informado foi ${minValue}</p>
     <p>Somando todos os valores, temos ${soma}</p>
     <p>A média dos valores é ${mediaValue}</p>  `;
-});
+
+};
+
+//fazer verificação 
