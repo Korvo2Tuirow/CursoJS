@@ -22,6 +22,7 @@ function carregar() {
         msg2.innerHTML = ` Tenha uma BOA TARDE !`
         img.src = 'media/fototarde.png'
         document.body.style.backgroundColor = '#A1CAFF'
+        
 
     } else {
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        var msg = ("")
+        var pos = 4
+
+        switch(pos){
+
+            case 1 :
+                msg= "Primeiro Lugar"
+                break
+
+            case 2 :
+                msg = "Segundo Lugar"
+                break
+
+            case 3 :
+                msg = "Terceiro Lugar"
+                break
+
+            default:
+                msg = "Não teve colocação"
+
+        }
+
+        switch(pos){
+            case 1 :
+            case 2 :
+            case 3 :
+                msg += "<br>Subiu ao podio"
+                break
+            default :
+            msg += "<br> Não subiu ao podio"
+        }
+
+        document.write(msg)
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
